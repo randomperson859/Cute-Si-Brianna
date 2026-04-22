@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>WORD SEARCH GAME</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="cute si bree">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fruits.css">
+</head>
+<body data-category="fruits">
+    <div class="page">
+        <table>
+            <caption>
+                <h1>WORD SEARCH</h1>
+                <h2>CATEGORY: FRUITS</h2>
+            </caption>
+            <tr><th>A</th><th>K</th><th>O</th><th>L</th><th>I</th><th>M</th><th>E</th><th>C</th></tr>
+            <tr><th>B</th><th>I</th><th>R</th><th>E</th><th>G</th><th>E</th><th>P</th><th>A</th></tr>
+            <tr><th>F</th><th>W</th><th>A</th><th>M</th><th>R</th><th>L</th><th>E</th><th>P</th></tr>
+            <tr><th>R</th><th>I</th><th>N</th><th>P</th><th>A</th><th>O</th><th>A</th><th>R</th></tr>
+            <tr><th>U</th><th>F</th><th>G</th><th>L</th><th>P</th><th>N</th><th>R</th><th>I</th></tr>
+            <tr><th>I</th><th>N</th><th>E</th><th>U</th><th>E</th><th>L</th><th>G</th><th>C</th></tr>
+            <tr><th>T</th><th>L</th><th>E</th><th>M</th><th>O</th><th>N</th><th>E</th><th>O</th></tr>
+            <tr><th>S</th><th>C</th><th>H</th><th>E</th><th>R</th><th>R</th><th>Y</th><th>T</th></tr>
+        </table>
+
+        <p id="timer" class="timer"></p>
+
+        <h2>Enter the word you found:</h2>
+        <div class="word-row">
+            <input type="text" id="userWord" placeholder="Type word here">
+            <button onclick="checkWordFruits()" type="button">Submit</button>
+        </div>
+
+        <p id="result"></p>
+        <p id="progress"></p>
+
+        <div class="leaderboard-box">
+            <h3>Fruits Leaderboard</h3>
+            <ol id="leaderboard"></ol>
+        </div>
+        
+        <div class="actions">
+            <a href="login.html" class="button">Back to Categories</a>
+            <a href="index.html" class="button secondary">Back to Home</a>
+        </div>
+    </div>
+
+    <script src="music.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

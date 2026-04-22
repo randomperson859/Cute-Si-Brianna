@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>WORD SEARCH GAME</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="cute si bree">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to our game!</h1>
+        <h3>Enter a username to start</h3>
+
+        <form id="usernameForm" onsubmit="return validateForm()">
+            <input type="text" id="username" placeholder="Enter username" required pattern="[A-Za-z0-9_]+">
+            <button type="submit">Start</button>
+        </form>
+
+        <p id="welcome"></p>
+
+        <div class="buttons hidden" id="categoryButtons">
+            <a href="fruits.html" class="button">Fruits</a>
+            <a href="carbrands.html" class="button">Car Brands</a>
+            <a href="countries.html" class="button">Countries</a>
+        </div>
+        <div class="buttons">
+            <a href="index.html" class="button secondary">Return to Home</a>
+            <button type="button" onclick="resetGame()">Reset Game</button>
+        </div>
+    </div>
+
+    <script src="music.js"></script>
+    <script src="startgame.js"></script>
+</body>
+</html>

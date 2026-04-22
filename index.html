@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>WORD SEARCH GAME</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="cute si bree">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="header">
+        <h1>WORD SEARCH GAME</h1>
+        <p>
+            Welcome to the <span class="highlight">Word Search Game</span>, where your goal is to
+            <span class="highlight">find hidden words within a grid of letters</span>. As you begin
+            the game, you are presented with a square grid filled with random letters.
+            These words are cleverly hidden in different directions. They may appear
+            <span class="highlight">horizontally, vertically, or diagonally, and can even be spelled backward.</span>
+            It is up to you to carefully scan the grid and spot each word!
+            <br><br>
+            As you explore the word search puzzle, you try to find words hidden within the grid of letters.
+            <span class="highlight">When you think you have spotted a word, you type it into the game.</span>
+            The system will then check your answer. If the word you entered matches one of the hidden words in the puzzle,
+            the game will confirm that the word is correct and mark it as found. However, if the word is not part of the puzzle,
+            the game will display a message saying that the word does not exist.
+            <br><br>
+            To keep things even more exciting, the game has three types of categories:
+            <span class="highlight">Fruits, Car Brands, and Countries.</span> Each level is unique, each with its own theme and carefully hidden words
+            that will really test your skills. But here is the best part, if you conquer all three levels, you win a special
+            <span class="highlight">reward: a Jaypee Peroy!</span>
+        </p>
+
+        <table>
+            <caption><h1>SAMPLE GAME!</h1></caption>
+            <tr>
+                <th>A</th>
+                <th>J</th>
+                <th>F</th>
+            </tr>
+            <tr>
+                <th tutorialletter="C">C</th>
+                <th tutorialletter="A">A</th>
+                <th tutorialletter="T">T</th>
+            </tr>
+            <tr>
+                <th>U</th>
+                <th>A</th>
+                <th>V</th>
+            </tr>
+        </table>
+
+        <div class="word">
+            <input type="text" id="userWord" placeholder="Type word here">
+            <button onclick="checkWordTutorialMode()" type="button">Submit</button>
+        </div>
+        <p id="result" class="result"></p>
+
+        <div class="game">
+            <a href="login.html" class="button">Proceed to the Game</a>
+        </div>
+    </div>
+
+    <script src="music.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
